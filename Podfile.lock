@@ -1,0 +1,98 @@
+PODS:
+  - MaterialComponents/ActivityIndicator (108.0.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/AnimationTiming (108.0.0)
+  - MaterialComponents/Availability (108.0.0)
+  - MaterialComponents/Buttons (108.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (108.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (108.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (108.0.0)
+  - MaterialComponents/private/Application (108.0.0)
+  - MaterialComponents/private/Color (108.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (108.0.0)
+  - MaterialComponents/Ripple (108.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (108.0.0)
+  - MaterialComponents/ShadowLayer (108.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (108.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (108.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (108.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - Nuke (8.4.1)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+
+DEPENDENCIES:
+  - MaterialComponents/ActivityIndicator
+  - MaterialComponents/Buttons
+  - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields
+  - Nuke
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - MotionAnimator
+    - MotionInterchange
+    - Nuke
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  MaterialComponents: 5ce7930b30fafd4c1ba402abf8e460dbde90cb94
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+
+PODFILE CHECKSUM: bb2194b01a3ddd4992c78bb5eead62050636ac64
+
+COCOAPODS: 1.9.1

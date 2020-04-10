@@ -3,13 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDB5243FF39A00C35D97 /* R.generated.swift */; };
+		465EBDC0243FF53900C35D97 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDBF243FF53900C35D97 /* ShadowedView.swift */; };
+		465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC1243FF59B00C35D97 /* HomeVC.swift */; };
+		465EBDC4243FF69000C35D97 /* WEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC3243FF69000C35D97 /* WEService.swift */; };
+		465EBDC6243FF85700C35D97 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC5243FF85700C35D97 /* URLSession+Extension.swift */; };
+		465EBDC8243FF86F00C35D97 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC7243FF86F00C35D97 /* Date+Extension.swift */; };
+		465EBDCA243FF99F00C35D97 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDC9243FF99F00C35D97 /* Colors.xcassets */; };
+		465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDCB243FFACB00C35D97 /* TypeAlias.swift */; };
+		465EBDD2243FFB6600C35D97 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDCD243FFB6600C35D97 /* Roboto-Medium.ttf */; };
+		465EBDD3243FFB6600C35D97 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDCE243FFB6600C35D97 /* Roboto-Bold.ttf */; };
+		465EBDD4243FFB6600C35D97 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDCF243FFB6600C35D97 /* Roboto-Italic.ttf */; };
+		465EBDD5243FFB6600C35D97 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDD0243FFB6600C35D97 /* Roboto-Light.ttf */; };
+		465EBDD6243FFB6600C35D97 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDD1243FFB6600C35D97 /* Roboto-Regular.ttf */; };
+		5C1ADDFBD8D036D1C61AFBFC /* Pods_WoopEventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */; };
+		8BFE2AC76DEF8AD7FE298B20 /* Pods_WoopEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */; };
+		D14F26A178CEB873A3946F16 /* Pods_WoopEvents_WoopEventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */; };
 		EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C521E243FCDDC00B9374C /* AppDelegate.swift */; };
-		EC0C5221243FCDDC00B9374C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C5220243FCDDC00B9374C /* SceneDelegate.swift */; };
-		EC0C5223243FCDDC00B9374C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C5222243FCDDC00B9374C /* ViewController.swift */; };
 		EC0C5226243FCDDC00B9374C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0C5224243FCDDC00B9374C /* Main.storyboard */; };
 		EC0C5228243FCDE200B9374C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0C5227243FCDE200B9374C /* Assets.xcassets */; };
 		EC0C522B243FCDE200B9374C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0C5229243FCDE200B9374C /* LaunchScreen.storyboard */; };
@@ -35,10 +49,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F379F2241525063A0459F8D /* Pods-WoopEvents-WoopEventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEvents-WoopEventsUITests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEvents_WoopEventsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465EBDB5243FF39A00C35D97 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		465EBDBF243FF53900C35D97 /* ShadowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
+		465EBDC1243FF59B00C35D97 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		465EBDC3243FF69000C35D97 /* WEService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEService.swift; sourceTree = "<group>"; };
+		465EBDC5243FF85700C35D97 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		465EBDC7243FF86F00C35D97 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		465EBDC9243FF99F00C35D97 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		465EBDCB243FFACB00C35D97 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		465EBDCD243FFB6600C35D97 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		465EBDCE243FFB6600C35D97 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		465EBDCF243FFB6600C35D97 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		465EBDD0243FFB6600C35D97 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		465EBDD1243FFB6600C35D97 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.release.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.release.xcconfig"; sourceTree = "<group>"; };
+		70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB62362BCF3643783D05535C /* Pods-WoopEvents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEvents.debug.xcconfig"; path = "Target Support Files/Pods-WoopEvents/Pods-WoopEvents.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C3159E8F95D733F14AB8B8 /* Pods-WoopEvents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEvents.release.xcconfig"; path = "Target Support Files/Pods-WoopEvents/Pods-WoopEvents.release.xcconfig"; sourceTree = "<group>"; };
+		EAAB12C1CA1A5050D5E1AB08 /* Pods-WoopEvents-WoopEventsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEvents-WoopEventsUITests.release.xcconfig"; path = "Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC0C521B243FCDDC00B9374C /* WoopEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoopEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0C521E243FCDDC00B9374C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC0C5220243FCDDC00B9374C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC0C5222243FCDDC00B9374C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC0C5225243FCDDC00B9374C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC0C5227243FCDE200B9374C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0C522A243FCDE200B9374C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFE2AC76DEF8AD7FE298B20 /* Pods_WoopEvents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1ADDFBD8D036D1C61AFBFC /* Pods_WoopEventsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14F26A178CEB873A3946F16 /* Pods_WoopEvents_WoopEventsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465EBDB7243FF4A700C35D97 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDCB243FFACB00C35D97 /* TypeAlias.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		465EBDB8243FF4A700C35D97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDBF243FF53900C35D97 /* ShadowedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		465EBDB9243FF4A700C35D97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDC3243FF69000C35D97 /* WEService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		465EBDBA243FF4A700C35D97 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDC5243FF85700C35D97 /* URLSession+Extension.swift */,
+				465EBDC7243FF86F00C35D97 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		465EBDBB243FF4A700C35D97 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDCE243FFB6600C35D97 /* Roboto-Bold.ttf */,
+				465EBDCF243FFB6600C35D97 /* Roboto-Italic.ttf */,
+				465EBDD0243FFB6600C35D97 /* Roboto-Light.ttf */,
+				465EBDCD243FFB6600C35D97 /* Roboto-Medium.ttf */,
+				465EBDD1243FFB6600C35D97 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		465EBDBC243FF4A700C35D97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		465EBDBD243FF4A700C35D97 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDC1243FF59B00C35D97 /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6175E3A97DB0A452B70467D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */,
+				3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */,
+				70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD472FA309B2BE4B35FB9BAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB62362BCF3643783D05535C /* Pods-WoopEvents.debug.xcconfig */,
+				C6C3159E8F95D733F14AB8B8 /* Pods-WoopEvents.release.xcconfig */,
+				1F379F2241525063A0459F8D /* Pods-WoopEvents-WoopEventsUITests.debug.xcconfig */,
+				EAAB12C1CA1A5050D5E1AB08 /* Pods-WoopEvents-WoopEventsUITests.release.xcconfig */,
+				516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */,
+				60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC0C5212243FCDDC00B9374C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +203,8 @@
 				EC0C5234243FCDE200B9374C /* WoopEventsTests */,
 				EC0C523F243FCDE200B9374C /* WoopEventsUITests */,
 				EC0C521C243FCDDC00B9374C /* Products */,
+				BD472FA309B2BE4B35FB9BAF /* Pods */,
+				A6175E3A97DB0A452B70467D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +221,20 @@
 		EC0C521D243FCDDC00B9374C /* WoopEvents */ = {
 			isa = PBXGroup;
 			children = (
-				EC0C521E243FCDDC00B9374C /* AppDelegate.swift */,
-				EC0C5220243FCDDC00B9374C /* SceneDelegate.swift */,
-				EC0C5222243FCDDC00B9374C /* ViewController.swift */,
 				EC0C5224243FCDDC00B9374C /* Main.storyboard */,
+				465EBDBC243FF4A700C35D97 /* Model */,
+				465EBDB8243FF4A700C35D97 /* View */,
+				465EBDBD243FF4A700C35D97 /* ViewControllers */,
+				465EBDB9243FF4A700C35D97 /* Services */,
+				465EBDB7243FF4A700C35D97 /* Helpers */,
+				465EBDBA243FF4A700C35D97 /* Extensions */,
+				EC0C521E243FCDDC00B9374C /* AppDelegate.swift */,
+				465EBDC9243FF99F00C35D97 /* Colors.xcassets */,
 				EC0C5227243FCDE200B9374C /* Assets.xcassets */,
+				465EBDBB243FF4A700C35D97 /* Fonts */,
 				EC0C5229243FCDE200B9374C /* LaunchScreen.storyboard */,
 				EC0C522C243FCDE200B9374C /* Info.plist */,
+				465EBDB5243FF39A00C35D97 /* R.generated.swift */,
 			);
 			path = WoopEvents;
 			sourceTree = "<group>";
@@ -135,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0C5245243FCDE200B9374C /* Build configuration list for PBXNativeTarget "WoopEvents" */;
 			buildPhases = (
+				D2BF44C8633151A87F28C164 /* [CP] Check Pods Manifest.lock */,
+				465EBDB4243FF2C600C35D97 /* ShellScript */,
 				EC0C5217243FCDDC00B9374C /* Sources */,
 				EC0C5218243FCDDC00B9374C /* Frameworks */,
 				EC0C5219243FCDDC00B9374C /* Resources */,
+				1B144AD732792252CA620ADA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0C5248243FCDE200B9374C /* Build configuration list for PBXNativeTarget "WoopEventsTests" */;
 			buildPhases = (
+				9160BAA9FC7ADADCAA49E76B /* [CP] Check Pods Manifest.lock */,
 				EC0C522D243FCDE200B9374C /* Sources */,
 				EC0C522E243FCDE200B9374C /* Frameworks */,
 				EC0C522F243FCDE200B9374C /* Resources */,
@@ -170,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0C524B243FCDE200B9374C /* Build configuration list for PBXNativeTarget "WoopEventsUITests" */;
 			buildPhases = (
+				5BB2CB024698AC8F50BDEC84 /* [CP] Check Pods Manifest.lock */,
 				EC0C5238243FCDE200B9374C /* Sources */,
 				EC0C5239243FCDE200B9374C /* Frameworks */,
 				EC0C523A243FCDE200B9374C /* Resources */,
+				32A17C182300BB27445A8422 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +367,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465EBDD2243FFB6600C35D97 /* Roboto-Medium.ttf in Resources */,
 				EC0C522B243FCDE200B9374C /* LaunchScreen.storyboard in Resources */,
+				465EBDD3243FFB6600C35D97 /* Roboto-Bold.ttf in Resources */,
+				465EBDCA243FF99F00C35D97 /* Colors.xcassets in Resources */,
+				465EBDD4243FFB6600C35D97 /* Roboto-Italic.ttf in Resources */,
 				EC0C5228243FCDE200B9374C /* Assets.xcassets in Resources */,
+				465EBDD6243FFB6600C35D97 /* Roboto-Regular.ttf in Resources */,
+				465EBDD5243FFB6600C35D97 /* Roboto-Light.ttf in Resources */,
 				EC0C5226243FCDDC00B9374C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +395,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B144AD732792252CA620ADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopEvents/Pods-WoopEvents-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopEvents/Pods-WoopEvents-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopEvents/Pods-WoopEvents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32A17C182300BB27445A8422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		465EBDB4243FF2C600C35D97 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		5BB2CB024698AC8F50BDEC84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopEvents-WoopEventsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9160BAA9FC7ADADCAA49E76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopEventsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2BF44C8633151A87F28C164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopEvents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC0C5217243FCDDC00B9374C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0C5223243FCDDC00B9374C /* ViewController.swift in Sources */,
+				465EBDC4243FF69000C35D97 /* WEService.swift in Sources */,
 				EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */,
-				EC0C5221243FCDDC00B9374C /* SceneDelegate.swift in Sources */,
+				465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */,
+				465EBDC6243FF85700C35D97 /* URLSession+Extension.swift in Sources */,
+				465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */,
+				465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */,
+				465EBDC0243FF53900C35D97 /* ShadowedView.swift in Sources */,
+				465EBDC8243FF86F00C35D97 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +700,13 @@
 		};
 		EC0C5246243FCDE200B9374C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB62362BCF3643783D05535C /* Pods-WoopEvents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAWNG4XA39;
 				INFOPLIST_FILE = WoopEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,17 +714,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.WoopEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EC0C5247243FCDE200B9374C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C3159E8F95D733F14AB8B8 /* Pods-WoopEvents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAWNG4XA39;
 				INFOPLIST_FILE = WoopEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,12 +734,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.WoopEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		EC0C5249243FCDE200B9374C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +763,7 @@
 		};
 		EC0C524A243FCDE200B9374C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +786,7 @@
 		};
 		EC0C524C243FCDE200B9374C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F379F2241525063A0459F8D /* Pods-WoopEvents-WoopEventsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +807,7 @@
 		};
 		EC0C524D243FCDE200B9374C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAB12C1CA1A5050D5E1AB08 /* Pods-WoopEvents-WoopEventsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
