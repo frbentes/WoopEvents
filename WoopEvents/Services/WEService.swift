@@ -64,6 +64,7 @@ class WEService {
                         completion(.failure(.decodeError))
                     }
                 case .failure(let error):
+                    print(error.localizedDescription)
                     completion(.failure(.apiError))
                 }
          }.resume()
