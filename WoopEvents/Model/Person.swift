@@ -10,8 +10,8 @@ import Foundation
 
 struct Person: Codable {
     
-    let id: Int
-    let eventId: Int
+    let id: String
+    let eventId: String
     let name: String
     let picture: String?
     

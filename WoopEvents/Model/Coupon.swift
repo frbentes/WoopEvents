@@ -10,8 +10,8 @@ import Foundation
 
 struct Coupon: Codable {
     
-    let id: Int
-    let eventId: Int
+    let id: String
+    let eventId: String
     let discount: Int
     
 }

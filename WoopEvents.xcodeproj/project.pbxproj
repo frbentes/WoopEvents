@@ -25,6 +25,8 @@
 		465EBDDC2440455C00C35D97 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDDB2440455C00C35D97 /* Person.swift */; };
 		465EBDE0244119E900C35D97 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDDE244119E900C35D97 /* EventCell.swift */; };
 		465EBDE1244119E900C35D97 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDDF244119E900C35D97 /* EventCell.xib */; };
+		465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE2244162F900C35D97 /* ReversedGeoLocation.swift */; };
+		465EBDE524416A1200C35D97 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE424416A1200C35D97 /* UIImageView+Extension.swift */; };
 		5C1ADDFBD8D036D1C61AFBFC /* Pods_WoopEventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */; };
 		8BFE2AC76DEF8AD7FE298B20 /* Pods_WoopEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */; };
 		D14F26A178CEB873A3946F16 /* Pods_WoopEvents_WoopEventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */; };
@@ -75,6 +77,8 @@
 		465EBDDB2440455C00C35D97 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		465EBDDE244119E900C35D97 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		465EBDDF244119E900C35D97 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		465EBDE2244162F900C35D97 /* ReversedGeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversedGeoLocation.swift; sourceTree = "<group>"; };
+		465EBDE424416A1200C35D97 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.release.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.release.xcconfig"; sourceTree = "<group>"; };
 		70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +157,7 @@
 			children = (
 				465EBDC5243FF85700C35D97 /* URLSession+Extension.swift */,
 				465EBDC7243FF86F00C35D97 /* Date+Extension.swift */,
+				465EBDE424416A1200C35D97 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				465EBDD7244035C600C35D97 /* Event.swift */,
 				465EBDD92440407C00C35D97 /* Coupon.swift */,
 				465EBDDB2440455C00C35D97 /* Person.swift */,
+				465EBDE2244162F900C35D97 /* ReversedGeoLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -548,6 +554,8 @@
 			files = (
 				465EBDC4243FF69000C35D97 /* WEService.swift in Sources */,
 				465EBDD8244035C600C35D97 /* Event.swift in Sources */,
+				465EBDE524416A1200C35D97 /* UIImageView+Extension.swift in Sources */,
+				465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */,
 				EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */,
 				465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */,
 				465EBDE0244119E900C35D97 /* EventCell.swift in Sources */,

@@ -15,6 +15,12 @@ class WEService {
     let apiUrl = "http://5b840ba5db24a100142dcd8c.mockapi.io/api"
     
     private init() {}
+        
+    func allEvents(result: @escaping (Result<[Event], WEServiceError>) -> Void) {
+        let url = URL(string: "\(self.apiUrl)/events")!
+        
+        fetch(url: url, completion: result)
+    }
     
     public enum RequestType: String {
         case get = "GET"
@@ -28,9 +34,9 @@ class WEService {
         case decodeError
     }
     
-    private func fetchResources<T: Decodable>(url: URL,
-                                              parameters: [String: String]? = nil,
-                                              completion: @escaping (Result<T, WEServiceError>) -> Void) {
+    private func fetch<T: Decodable>(url: URL,
+                                     parameters: [String: String]? = nil,
+                                     completion: @escaping (Result<T, WEServiceError>) -> Void) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             completion(.failure(.invalidEndpoint))
             return

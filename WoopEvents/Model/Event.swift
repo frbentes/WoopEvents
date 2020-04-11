@@ -10,14 +10,14 @@ import Foundation
 
 struct Event: Codable {
     
-    let id: Int
+    let id: String
     let title: String
     let description: String
     let date: TimeInterval
     let price: Float
     let imageUrl: String?
-    let latitude: Float?
-    let longitude: Float?
+    let latitude: Double?
+    let longitude: Double?
     let coupons: [Coupon]?
     let people: [Person]?
     

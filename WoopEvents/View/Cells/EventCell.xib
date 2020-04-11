@@ -23,7 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-je-YaN">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-je-YaN">
                         <rect key="frame" x="16" y="10" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="PVO-Rw-Hm7"/>
@@ -31,13 +31,13 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-jf-POG">
-                        <rect key="frame" x="74" y="14" width="230" height="53"/>
+                        <rect key="frame" x="76" y="14" width="228" height="53"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-aj-KFm">
-                                <rect key="frame" x="0.0" y="0.0" width="230" height="31"/>
+                                <rect key="frame" x="0.0" y="0.0" width="228" height="31"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9pX-Gw-LGF">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="13"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock" translatesAutoresizingMaskIntoConstraints="NO" id="bm3-Yx-zIe">
                                                 <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
@@ -47,7 +47,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5x-tA-aAw">
-                                                <rect key="frame" x="19" y="0.0" width="211" height="13"/>
+                                                <rect key="frame" x="19" y="0.0" width="209" height="13"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" name="cardRegularText"/>
                                                 <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jd3-mI-DbZ">
-                                        <rect key="frame" x="0.0" y="18" width="230" height="13"/>
+                                        <rect key="frame" x="0.0" y="18" width="228" height="13"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location" translatesAutoresizingMaskIntoConstraints="NO" id="YaA-5q-0jK">
                                                 <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
@@ -65,7 +65,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-kg-Y8W">
-                                                <rect key="frame" x="19" y="0.0" width="211" height="13"/>
+                                                <rect key="frame" x="19" y="0.0" width="209" height="13"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" name="cardRegularText"/>
                                                 <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60k-fk-9uS">
-                                <rect key="frame" x="0.0" y="36" width="230" height="17"/>
+                                <rect key="frame" x="0.0" y="36" width="228" height="17"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" name="defaultBlack"/>
                                 <nil key="highlightedColor"/>
@@ -92,9 +92,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="NNT-9h-Ujz" secondAttribute="bottom" id="J5p-td-F2o"/>
-                    <constraint firstItem="xT7-jf-POG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Ldd-4d-sSY"/>
                     <constraint firstItem="Dzz-je-YaN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Sld-dV-Aok"/>
-                    <constraint firstItem="xT7-jf-POG" firstAttribute="leading" secondItem="Dzz-je-YaN" secondAttribute="trailing" constant="8" id="YNO-Jh-UnE"/>
+                    <constraint firstItem="xT7-jf-POG" firstAttribute="top" secondItem="Dzz-je-YaN" secondAttribute="top" constant="4" id="TTo-mF-m42"/>
+                    <constraint firstItem="xT7-jf-POG" firstAttribute="leading" secondItem="Dzz-je-YaN" secondAttribute="trailing" constant="10" id="YNO-Jh-UnE"/>
                     <constraint firstItem="NNT-9h-Ujz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bko-TL-q8q"/>
                     <constraint firstAttribute="trailing" secondItem="xT7-jf-POG" secondAttribute="trailing" constant="16" id="jZB-Br-8KC"/>
                     <constraint firstAttribute="trailing" secondItem="NNT-9h-Ujz" secondAttribute="trailing" id="kto-Yb-52F"/>
