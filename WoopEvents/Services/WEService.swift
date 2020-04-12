@@ -22,6 +22,12 @@ class WEService {
         fetch(url: url, completion: result)
     }
     
+    func getEvent(id: String, result: @escaping (Result<Event, WEServiceError>) -> Void) {
+        let url = URL(string: "\(self.apiUrl)/events/\(id)")!
+        
+        fetch(url: url, completion: result)
+    }
+    
     public enum RequestType: String {
         case get = "GET"
         case post = "POST"

@@ -33,11 +33,61 @@
                     <navigationItem key="navigationItem" title="Eventos" id="7jy-yX-OuC"/>
                     <connections>
                         <outlet property="tableEvents" destination="D63-qd-e8P" id="9PY-ek-jBL"/>
+                        <segue destination="TgE-Zl-jfH" kind="show" identifier="segueEventDetail" id="Ck5-KS-rjz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Detalhe do Evento-->
+        <scene sceneID="edh-Tk-1E3">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailVC" id="TgE-Zl-jfH" customClass="EventDetailVC" customModule="WoopEvents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7c4-1p-sTd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xbv-rH-zRG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Efq-pc-FFe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xab-pH-Og3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="xab-pH-Og3" firstAttribute="top" secondItem="Efq-pc-FFe" secondAttribute="top" id="Ok0-1A-OPz"/>
+                                        <constraint firstAttribute="trailing" secondItem="xab-pH-Og3" secondAttribute="trailing" id="QnH-on-hO3"/>
+                                        <constraint firstAttribute="bottom" secondItem="xab-pH-Og3" secondAttribute="bottom" id="ena-E2-mHJ"/>
+                                        <constraint firstItem="xab-pH-Og3" firstAttribute="leading" secondItem="Efq-pc-FFe" secondAttribute="leading" id="fBV-li-W1N"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xbv-rH-zRG" firstAttribute="leading" secondItem="zBn-Pu-5zs" secondAttribute="leading" id="8TJ-b8-tLf"/>
+                            <constraint firstItem="xbv-rH-zRG" firstAttribute="top" secondItem="zBn-Pu-5zs" secondAttribute="top" id="bl9-se-tWL"/>
+                            <constraint firstItem="xbv-rH-zRG" firstAttribute="trailing" secondItem="zBn-Pu-5zs" secondAttribute="trailing" id="cim-6e-fR1"/>
+                            <constraint firstItem="xbv-rH-zRG" firstAttribute="bottom" secondItem="zBn-Pu-5zs" secondAttribute="bottom" id="hBs-CS-nuK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBn-Pu-5zs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalhe do Evento" id="oTf-RE-uvO"/>
+                    <connections>
+                        <outlet property="imageHeader" destination="xab-pH-Og3" id="LJr-SW-Da9"/>
+                        <outlet property="tableView" destination="xbv-rH-zRG" id="R9Y-eP-HEL"/>
+                        <outlet property="viewHeader" destination="Efq-pc-FFe" id="7t9-FS-pId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d90-Yy-aI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="116.51785714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="18a-2q-Bh7">

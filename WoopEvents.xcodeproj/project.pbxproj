@@ -27,6 +27,11 @@
 		465EBDE1244119E900C35D97 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDDF244119E900C35D97 /* EventCell.xib */; };
 		465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE2244162F900C35D97 /* ReversedGeoLocation.swift */; };
 		465EBDE524416A1200C35D97 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE424416A1200C35D97 /* UIImageView+Extension.swift */; };
+		465EBDE72442B85100C35D97 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE62442B85100C35D97 /* EventDetailVC.swift */; };
+		465EBDEA2442C8BC00C35D97 /* EventResumeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDE82442C8BC00C35D97 /* EventResumeCell.swift */; };
+		465EBDEB2442C8BD00C35D97 /* EventResumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465EBDE92442C8BC00C35D97 /* EventResumeCell.xib */; };
+		465EBDEE2443D1E300C35D97 /* WeStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDED2443D1E300C35D97 /* WeStoryboardViewController.swift */; };
+		465EBDF02443D26400C35D97 /* WeStoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDEF2443D26400C35D97 /* WeStoryboardManager.swift */; };
 		5C1ADDFBD8D036D1C61AFBFC /* Pods_WoopEventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */; };
 		8BFE2AC76DEF8AD7FE298B20 /* Pods_WoopEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */; };
 		D14F26A178CEB873A3946F16 /* Pods_WoopEvents_WoopEventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */; };
@@ -79,6 +84,11 @@
 		465EBDDF244119E900C35D97 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		465EBDE2244162F900C35D97 /* ReversedGeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversedGeoLocation.swift; sourceTree = "<group>"; };
 		465EBDE424416A1200C35D97 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		465EBDE62442B85100C35D97 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		465EBDE82442C8BC00C35D97 /* EventResumeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResumeCell.swift; sourceTree = "<group>"; };
+		465EBDE92442C8BC00C35D97 /* EventResumeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventResumeCell.xib; sourceTree = "<group>"; };
+		465EBDED2443D1E300C35D97 /* WeStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeStoryboardViewController.swift; sourceTree = "<group>"; };
+		465EBDEF2443D26400C35D97 /* WeStoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeStoryboardManager.swift; sourceTree = "<group>"; };
 		516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.release.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.release.xcconfig"; sourceTree = "<group>"; };
 		70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				465EBDC3243FF69000C35D97 /* WEService.swift */,
+				465EBDEF2443D26400C35D97 /* WeStoryboardManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				465EBDC1243FF59B00C35D97 /* HomeVC.swift */,
+				465EBDE62442B85100C35D97 /* EventDetailVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,8 +210,18 @@
 			children = (
 				465EBDDE244119E900C35D97 /* EventCell.swift */,
 				465EBDDF244119E900C35D97 /* EventCell.xib */,
+				465EBDE82442C8BC00C35D97 /* EventResumeCell.swift */,
+				465EBDE92442C8BC00C35D97 /* EventResumeCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		465EBDEC2443D19400C35D97 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				465EBDED2443D1E300C35D97 /* WeStoryboardViewController.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A6175E3A97DB0A452B70467D /* Frameworks */ = {
@@ -256,6 +278,7 @@
 				465EBDBD243FF4A700C35D97 /* ViewControllers */,
 				465EBDB9243FF4A700C35D97 /* Services */,
 				465EBDB7243FF4A700C35D97 /* Helpers */,
+				465EBDEC2443D19400C35D97 /* Protocols */,
 				465EBDBA243FF4A700C35D97 /* Extensions */,
 				EC0C521E243FCDDC00B9374C /* AppDelegate.swift */,
 				465EBDC9243FF99F00C35D97 /* Colors.xcassets */,
@@ -405,6 +428,7 @@
 				465EBDD6243FFB6600C35D97 /* Roboto-Regular.ttf in Resources */,
 				465EBDD5243FFB6600C35D97 /* Roboto-Light.ttf in Resources */,
 				465EBDE1244119E900C35D97 /* EventCell.xib in Resources */,
+				465EBDEB2442C8BD00C35D97 /* EventResumeCell.xib in Resources */,
 				EC0C5226243FCDDC00B9374C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,14 +577,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				465EBDC4243FF69000C35D97 /* WEService.swift in Sources */,
+				465EBDEE2443D1E300C35D97 /* WeStoryboardViewController.swift in Sources */,
 				465EBDD8244035C600C35D97 /* Event.swift in Sources */,
 				465EBDE524416A1200C35D97 /* UIImageView+Extension.swift in Sources */,
+				465EBDEA2442C8BC00C35D97 /* EventResumeCell.swift in Sources */,
 				465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */,
 				EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */,
 				465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */,
+				465EBDF02443D26400C35D97 /* WeStoryboardManager.swift in Sources */,
 				465EBDE0244119E900C35D97 /* EventCell.swift in Sources */,
 				465EBDDC2440455C00C35D97 /* Person.swift in Sources */,
 				465EBDC6243FF85700C35D97 /* URLSession+Extension.swift in Sources */,
+				465EBDE72442B85100C35D97 /* EventDetailVC.swift in Sources */,
 				465EBDDA2440407C00C35D97 /* Coupon.swift in Sources */,
 				465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */,
 				465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */,

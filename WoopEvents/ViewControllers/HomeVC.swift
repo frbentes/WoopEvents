@@ -80,6 +80,15 @@ class HomeVC: UIViewController {
         self.activityIndicator.stopAnimating()
     }
     
+    func openEventDetail(event: Event) {
+        guard let navigationController = self.navigationController else { return }
+        DispatchQueue.main.async {
+            let vc: EventDetailVC = WeStoryboardManager.instanceViewController()
+            vc.event = event
+            navigationController.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
 
 // MARK: - Table View
@@ -94,6 +103,14 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         cell.event = events[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let event = events[indexPath.row]
+        
+        openEventDetail(event: event)
     }
     
 }
