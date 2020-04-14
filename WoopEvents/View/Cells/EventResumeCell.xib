@@ -140,6 +140,8 @@
                 <outlet property="labelDescription" destination="c8h-Hf-h53" id="B0d-S0-XTx"/>
                 <outlet property="labelLocation" destination="jlc-tt-f8G" id="eBk-ke-R4C"/>
                 <outlet property="labelTitle" destination="Eo9-ch-EpZ" id="cNV-Xh-pV3"/>
+                <outlet property="stackViewSubItems" destination="GFr-fL-d8w" id="11I-dy-UzE"/>
+                <outlet property="stackViewTexts" destination="UNd-uq-Kc1" id="4FQ-hX-qaF"/>
             </connections>
             <point key="canvasLocation" x="139" y="133"/>
         </tableViewCell>

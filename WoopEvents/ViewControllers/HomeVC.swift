@@ -40,6 +40,7 @@ class HomeVC: UIViewController {
     }
     
     func configureTableView() {
+        self.tableEvents.accessibilityIdentifier = AccessibilityIdentifiers.eventTable
         self.tableEvents.delegate = self
         self.tableEvents.dataSource = self
         self.tableEvents.separatorStyle = .none

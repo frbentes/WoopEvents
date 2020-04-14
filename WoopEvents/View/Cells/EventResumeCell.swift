@@ -26,10 +26,14 @@ class EventResumeCell: UITableViewCell {
     @IBOutlet weak var labelLocation: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var buttonCheckin: MDCButton!
+    @IBOutlet weak var stackViewSubItems: UIStackView!
+    @IBOutlet weak var stackViewTexts: UIStackView!
     
     var event: Event! {
         didSet {
             self.labelTitle.text = event.title
+            accessibilityLabel = AccessibilityIdentifiers.eventResumeCellIdentifier(forTitle: event.title)
+            
             self.labelDescription.text = event.description
             
             let date = Date(timeIntervalSince1970: TimeInterval(event.date / 1000.0))
@@ -47,6 +51,15 @@ class EventResumeCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.stackViewTexts.setCustomSpacing(10.0, after: stackViewSubItems)
+        
+        setupAccessibilityIdentifiers()
+    }
+    
+    func setupAccessibilityIdentifiers() {
+        self.labelTitle.accessibilityIdentifier = AccessibilityIdentifiers.eventResumeCellTitleLabel
+        self.labelDate.accessibilityIdentifier = AccessibilityIdentifiers.eventResumeCellDateLabel
+        self.labelLocation.accessibilityIdentifier = AccessibilityIdentifiers.eventResumeCellLocationLabel
     }
     
     func configureLocation(_ latitude: Double, _ longitude: Double) {

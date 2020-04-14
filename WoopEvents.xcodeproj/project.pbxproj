@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463CD91A2445D179009B59B3 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */; };
+		463CD91C2445D1A0009B59B3 /* AccessibilityLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */; };
+		463CD9212445D982009B59B3 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9202445D982009B59B3 /* XCTestCase+Helpers.swift */; };
+		463CD9222445DE38009B59B3 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */; };
+		463CD9232445DE38009B59B3 /* AccessibilityLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */; };
 		465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDB5243FF39A00C35D97 /* R.generated.swift */; };
 		465EBDC0243FF53900C35D97 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDBF243FF53900C35D97 /* ShadowedView.swift */; };
 		465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC1243FF59B00C35D97 /* HomeVC.swift */; };
@@ -72,6 +77,9 @@
 		0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F379F2241525063A0459F8D /* Pods-WoopEvents-WoopEventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEvents-WoopEventsUITests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEvents-WoopEventsUITests/Pods-WoopEvents-WoopEventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEvents_WoopEventsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabels.swift; sourceTree = "<group>"; };
+		463CD9202445D982009B59B3 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
 		465EBDB5243FF39A00C35D97 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		465EBDBF243FF53900C35D97 /* ShadowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
 		465EBDC1243FF59B00C35D97 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -153,6 +161,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463CD9182445D141009B59B3 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */,
+				463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		463CD91E2445D94B009B59B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				463CD9202445D982009B59B3 /* XCTestCase+Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		465EBDB7243FF4A700C35D97 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +327,7 @@
 				465EBDBD243FF4A700C35D97 /* ViewControllers */,
 				465EBDB9243FF4A700C35D97 /* Services */,
 				465EBDB7243FF4A700C35D97 /* Helpers */,
+				463CD9182445D141009B59B3 /* Static */,
 				465EBDEC2443D19400C35D97 /* Protocols */,
 				465EBDBA243FF4A700C35D97 /* Extensions */,
 				EC0C521E243FCDDC00B9374C /* AppDelegate.swift */,
@@ -328,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0C5240243FCDE200B9374C /* WoopEventsUITests.swift */,
+				463CD91E2445D94B009B59B3 /* Utils */,
 				EC0C5242243FCDE200B9374C /* Info.plist */,
 			);
 			path = WoopEventsUITests;
@@ -611,6 +638,7 @@
 				465EBDEA2442C8BC00C35D97 /* EventResumeCell.swift in Sources */,
 				465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */,
 				EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */,
+				463CD91C2445D1A0009B59B3 /* AccessibilityLabels.swift in Sources */,
 				465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */,
 				465EBDF02443D26400C35D97 /* WeStoryboardManager.swift in Sources */,
 				4682CA2524443CC40098B930 /* Checkin.swift in Sources */,
@@ -622,6 +650,7 @@
 				465EBDE72442B85100C35D97 /* EventDetailVC.swift in Sources */,
 				4682CA2F24456A390098B930 /* BaseXibComponent.swift in Sources */,
 				465EBDDA2440407C00C35D97 /* Coupon.swift in Sources */,
+				463CD91A2445D179009B59B3 /* AccessibilityIdentifiers.swift in Sources */,
 				465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */,
 				465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */,
 				465EBDC0243FF53900C35D97 /* ShadowedView.swift in Sources */,
@@ -641,6 +670,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463CD9222445DE38009B59B3 /* AccessibilityIdentifiers.swift in Sources */,
+				463CD9232445DE38009B59B3 /* AccessibilityLabels.swift in Sources */,
+				463CD9212445D982009B59B3 /* XCTestCase+Helpers.swift in Sources */,
 				EC0C5241243FCDE200B9374C /* WoopEventsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,6 +21,7 @@ class EventCell: UITableViewCell {
     var event: Event! {
         didSet {
             self.labelTitle.text = event.title
+            accessibilityLabel = AccessibilityIdentifiers.eventCellIdentifier(forTitle: event.title)
             
             let date = Date(timeIntervalSince1970: TimeInterval(event.date / 1000.0))
             self.labelDate.text = date.toDDMMYYYY() + " - " + date.toHHmm()
@@ -43,7 +44,12 @@ class EventCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        setupAccessibilityIdentifiers()
+    }
+    
+    func setupAccessibilityIdentifiers() {
+        self.labelTitle.accessibilityIdentifier = AccessibilityIdentifiers.eventCellTitleLabel
     }
     
     func configureLocation(_ latitude: Double, _ longitude: Double) {

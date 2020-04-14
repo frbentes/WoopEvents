@@ -33,6 +33,7 @@ class EventDetailVC: UIViewController, WeStoryboardViewController {
     }
     
     func configureTableView() {
+        self.tableView.accessibilityIdentifier = AccessibilityIdentifiers.eventDetailTable
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.separatorStyle = .none
