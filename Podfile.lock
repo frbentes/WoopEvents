@@ -17,6 +17,15 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
+  - MaterialComponents/Dialogs (108.0.0):
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
   - MaterialComponents/Elevation (108.0.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
@@ -25,11 +34,17 @@ PODS:
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (108.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Application
   - MaterialComponents/Palettes (108.0.0)
   - MaterialComponents/private/Application (108.0.0)
   - MaterialComponents/private/Color (108.0.0):
     - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (108.0.0):
+    - MaterialComponents/private/Application
   - MaterialComponents/private/Math (108.0.0)
+  - MaterialComponents/private/Overlay (108.0.0)
   - MaterialComponents/Ripple (108.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
@@ -42,6 +57,19 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar (108.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
   - MaterialComponents/TextFields (108.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
@@ -66,8 +94,10 @@ PODS:
 DEPENDENCIES:
   - MaterialComponents/ActivityIndicator
   - MaterialComponents/Buttons
+  - MaterialComponents/Dialogs
   - MaterialComponents/ShadowElevations
   - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar
   - MaterialComponents/TextFields
   - Nuke
   - R.swift
@@ -93,6 +123,6 @@ SPEC CHECKSUMS:
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
 
-PODFILE CHECKSUM: bb2194b01a3ddd4992c78bb5eead62050636ac64
+PODFILE CHECKSUM: 5ee6ba92415e030d59aeb42a0318cf105c160191
 
 COCOAPODS: 1.9.1

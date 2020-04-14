@@ -19,13 +19,25 @@ class WEService {
     func allEvents(result: @escaping (Result<[Event], WEServiceError>) -> Void) {
         let url = URL(string: "\(self.apiUrl)/events")!
         
-        fetch(url: url, completion: result)
+        perform(url: url, completion: result)
     }
     
     func getEvent(id: String, result: @escaping (Result<Event, WEServiceError>) -> Void) {
         let url = URL(string: "\(self.apiUrl)/events/\(id)")!
         
-        fetch(url: url, completion: result)
+        perform(url: url, completion: result)
+    }
+    
+    func registerCheckin(checkin: Checkin, result: @escaping (Result<CheckinResponse, WEServiceError>) -> Void) {
+        let url = URL(string: "\(self.apiUrl)/checkin")!
+        
+        let parameters: [String: String] = [
+            "eventId": checkin.eventId,
+            "name": checkin.name,
+            "email": checkin.email
+        ]
+        
+        perform(url: url, method: RequestType.post.rawValue, parameters: parameters, completion: result)
     }
     
     public enum RequestType: String {
@@ -40,7 +52,8 @@ class WEService {
         case decodeError
     }
     
-    private func fetch<T: Decodable>(url: URL,
+    private func perform<T: Decodable>(url: URL,
+                                     method: String = RequestType.get.rawValue,
                                      parameters: [String: String]? = nil,
                                      completion: @escaping (Result<T, WEServiceError>) -> Void) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
@@ -61,7 +74,7 @@ class WEService {
             return
         }
         
-        URLSession.shared.dataTask(with: url, httpMethod: RequestType.get.rawValue) { (result) in
+        URLSession.shared.dataTask(with: url, httpMethod: method) { (result) in
             switch result {
                 case .success(let (response, data)):
                     guard let statusCode = (response as? HTTPURLResponse)?.statusCode, 200..<299 ~= statusCode else {

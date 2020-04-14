@@ -78,7 +78,7 @@ class EventResumeCell: UITableViewCell {
         }
         
         if !fullAddress.isEmpty {
-            self.labelLocation.textColor = R.color.cardRegularText()
+            self.labelLocation.textColor = Palette.cardRegularText()
             self.labelLocation.text = String(fullAddress.dropLast())
         } else {
             self.showUnavailableLocation()
@@ -86,7 +86,7 @@ class EventResumeCell: UITableViewCell {
     }
     
     func showUnavailableLocation() {
-        self.labelLocation.textColor = R.color.errorText()
+        self.labelLocation.textColor = Palette.errorText()
         self.labelLocation.text = "localização indisponível"
     }
     

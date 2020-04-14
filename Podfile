@@ -10,6 +10,8 @@ def material_components
   pod 'MaterialComponents/ActivityIndicator'
   pod 'MaterialComponents/ShadowLayer'
   pod 'MaterialComponents/ShadowElevations'
+  pod 'MaterialComponents/Snackbar'
+  pod 'MaterialComponents/Dialogs'
 end
 
 target 'WoopEvents' do

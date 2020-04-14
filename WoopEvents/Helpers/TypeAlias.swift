@@ -9,3 +9,4 @@
 import Foundation
 
 typealias Palette = R.color
+typealias WeFont = R.font

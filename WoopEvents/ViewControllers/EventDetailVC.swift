@@ -43,28 +43,24 @@ class EventDetailVC: UIViewController, WeStoryboardViewController {
     
     func configureHeaderView() {
         if let url = event.imageUrl {
-            self.imageHeader.load(fromUrl: url, placeholdered: true)
+            let targetSize = CGSize(width: UIScreen.main.bounds.width, height: 200)
+            self.imageHeader.load(fromUrl: url, placeholdered: true, targetSize: targetSize)
         } else {
             self.imageHeader.image = R.image.ic_placeholder_event()
         }
-        
-        addParallaxTo(view: viewHeader)
     }
     
-    func addParallaxTo(view: UIView) {
-        let amount = 200
-
-        let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
-        horizontal.minimumRelativeValue = -amount
-        horizontal.maximumRelativeValue = amount
-
-        let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
-        vertical.minimumRelativeValue = -amount
-        vertical.maximumRelativeValue = amount
-
-        let group = UIMotionEffectGroup()
-        group.motionEffects = [horizontal, vertical]
-        view.addMotionEffect(group)
+    func openCheckin() {
+        guard let navigationController = self.navigationController else { return }
+        DispatchQueue.main.async {
+            let vc: CheckinVC = WeStoryboardManager.instanceViewController()
+            vc.eventId = self.event.id
+            navigationController.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func shareEvent() {
+        
     }
 
 }
@@ -92,11 +88,11 @@ extension EventDetailVC: UITableViewDataSource, UITableViewDelegate {
 // MARK: - Event Resume
 extension EventDetailVC: EventResumeCellDelegate {
     func tapCheckin() {
-        print("tap checkin button")
+        openCheckin()
     }
     
     func tapShare() {
-        print("tap share button")
+        shareEvent()
     }
     
 }

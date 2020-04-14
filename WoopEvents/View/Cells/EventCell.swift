@@ -59,7 +59,7 @@ class EventCell: UITableViewCell {
             }
             let geoLocation = ReversedGeoLocation(with: placemark)
             if !geoLocation.city.isEmpty {
-                self.labelLocation.textColor = R.color.cardRegularText()
+                self.labelLocation.textColor = Palette.cardRegularText()
                 self.labelLocation.text = geoLocation.city
             } else {
                 self.showUnavailableLocation()
@@ -68,7 +68,7 @@ class EventCell: UITableViewCell {
     }
     
     func showUnavailableLocation() {
-        self.labelLocation.textColor = R.color.errorText()
+        self.labelLocation.textColor = Palette.errorText()
         self.labelLocation.text = "localização indisponível"
     }
 
