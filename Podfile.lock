@@ -90,6 +90,7 @@ PODS:
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
+  - ReachabilitySwift (5.0.0)
 
 DEPENDENCIES:
   - MaterialComponents/ActivityIndicator
@@ -101,6 +102,7 @@ DEPENDENCIES:
   - MaterialComponents/TextFields
   - Nuke
   - R.swift
+  - ReachabilitySwift
 
 SPEC REPOS:
   trunk:
@@ -112,6 +114,7 @@ SPEC REPOS:
     - Nuke
     - R.swift
     - R.swift.Library
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
   MaterialComponents: 5ce7930b30fafd4c1ba402abf8e460dbde90cb94
@@ -122,7 +125,8 @@ SPEC CHECKSUMS:
   Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: 5ee6ba92415e030d59aeb42a0318cf105c160191
+PODFILE CHECKSUM: d56368db7536051720c351dc8d52b3b318c7413c
 
 COCOAPODS: 1.9.1

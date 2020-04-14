@@ -26,6 +26,14 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1A-yH-vq8" customClass="ErrorView" customModule="WoopEvents" customModuleProvider="target">
+                                <rect key="frame" x="57" y="118" width="300" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4Hs-27-qsZ"/>
+                                    <constraint firstAttribute="height" constant="250" id="6JU-9B-qyl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -33,11 +41,14 @@
                             <constraint firstItem="D63-qd-e8P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Qv-eG-Hd7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D63-qd-e8P" secondAttribute="bottom" id="dcA-2Q-LNu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D63-qd-e8P" secondAttribute="trailing" id="iSN-qb-5hd"/>
+                            <constraint firstItem="y1A-yH-vq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mmu-v3-rWv"/>
+                            <constraint firstItem="y1A-yH-vq8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="u4G-Db-dHg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eventos" id="7jy-yX-OuC"/>
                     <connections>
+                        <outlet property="errorView" destination="y1A-yH-vq8" id="vi6-ln-vL8"/>
                         <outlet property="tableEvents" destination="D63-qd-e8P" id="9PY-ek-jBL"/>
                         <segue destination="TgE-Zl-jfH" kind="show" identifier="segueEventDetail" id="Ck5-KS-rjz"/>
                     </connections>

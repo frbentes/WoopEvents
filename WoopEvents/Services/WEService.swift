@@ -46,6 +46,7 @@ class WEService {
     }
     
     public enum WEServiceError: Error {
+        case noConnection
         case apiError
         case invalidEndpoint
         case invalidResponse
@@ -56,6 +57,11 @@ class WEService {
                                      method: String = RequestType.get.rawValue,
                                      parameters: [String: String]? = nil,
                                      completion: @escaping (Result<T, WEServiceError>) -> Void) {
+        guard WeConnectivityStatus.online else {
+            completion(.failure(.noConnection))
+            return
+        }
+        
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             completion(.failure(.invalidEndpoint))
             return
@@ -84,35 +90,13 @@ class WEService {
                     do {
                         let value = try JSONDecoder().decode(T.self, from: data)
                         completion(.success(value))
-                    } catch let jsonError {
-                        print(jsonError)
+                    } catch _ {
                         completion(.failure(.decodeError))
                     }
-                case .failure(let error):
-                    print(error.localizedDescription)
+            case .failure( _):
                     completion(.failure(.apiError))
                 }
          }.resume()
-    }
-    
-    private func handleNetworkResponse(response: HTTPURLResponse) -> NetworkError? {
-        switch response.statusCode {
-        case 200...299: return (nil)
-        case 300...399: return (NetworkError.redirectionError)
-        case 400...499: return (NetworkError.clientError)
-        case 500...599: return (NetworkError.serverError)
-        case 600: return (NetworkError.invalidRequest)
-        default: return (NetworkError.unknownError)
-        }
-    }
-    
-    public enum NetworkError: String, Error {
-        case redirectionError = "Redirection error"
-        case clientError = "Client Error"
-        case serverError = "Server Error"
-        case invalidRequest = "Invalid Request"
-        case unknownError = "Unknown Error"
-        case dataError = "Error getting valid data."
     }
     
 }

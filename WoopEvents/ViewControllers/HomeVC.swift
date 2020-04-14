@@ -12,6 +12,7 @@ import MaterialComponents.MDCActivityIndicator
 class HomeVC: UIViewController {
     
     @IBOutlet weak var tableEvents: UITableView!
+    @IBOutlet weak var errorView: ErrorView!
     
     var activityIndicator: MDCActivityIndicator!
     var events: [Event] = []
@@ -23,6 +24,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.errorView.delegate = self
         configureTableView()
         
         loadEvents()
@@ -44,23 +46,33 @@ class HomeVC: UIViewController {
                 case .success(let events):
                     self.handle(events: events)
                 case .failure(let error):
-                    self.handle(error: error.localizedDescription)
+                    self.handle(error: error)
              }
         }
     }
     
     func handle(events: [Event]) {
-        self.events = events
         DispatchQueue.main.async {
+            self.events = events
             self.hideProgress()
             self.tableEvents.reloadData()
+            if events.count == 0 {
+                self.showError(.empty)
+            }
         }
     }
     
-    func handle(error: String) {
-        print(error)
+    func handle(error: WEService.WEServiceError) {
         DispatchQueue.main.async {
             self.hideProgress()
+            switch error {
+            case .noConnection:
+                self.showError(.connection)
+            case .apiError, .invalidResponse:
+                self.showError(.serviceError)
+            case .decodeError, .invalidEndpoint:
+                self.showError(.appInternal)
+            }
         }
     }
     
@@ -113,4 +125,36 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         openEventDetail(event: event)
     }
     
+}
+
+// MARK: - Error View
+extension HomeVC: ErrorViewDelegate {
+    func tryToReload(_ view: ErrorView) {
+        hideError()
+        loadEvents()
+    }
+    
+    func showError(_ type: EventErrorType) {
+        switch type {
+        case .empty, .appInternal, .serviceError:
+            self.errorView.imageError.image = R.image.ic_error()
+            self.errorView.labelMessage.text = type.rawValue
+        case .connection:
+            self.errorView.imageError.image = R.image.ic_no_connection()
+            self.errorView.labelMessage.text = type.rawValue
+        }
+        self.errorView.isHidden = false
+    }
+    
+    func hideError() {
+        self.errorView.isHidden = true
+    }
+    
+}
+
+enum EventErrorType: String {
+    case connection = "Erro de conexão."
+    case empty = "Sem eventos."
+    case appInternal = "Erro interno."
+    case serviceError = "Erro no servidor."
 }

@@ -21,6 +21,7 @@ target 'WoopEvents' do
 
   pod 'R.swift'
   pod 'Nuke'
+  pod 'ReachabilitySwift'
 
   target 'WoopEventsTests' do
     inherit! :search_paths
