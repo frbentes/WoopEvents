@@ -60,7 +60,15 @@ class EventDetailVC: UIViewController, WeStoryboardViewController {
     }
     
     func shareEvent() {
-        
+        DispatchQueue.main.async {
+            let renderer = UIGraphicsImageRenderer(size: self.view.bounds.size)
+            let image = renderer.image { ctx in
+                self.view.drawHierarchy(in: self.view.bounds, afterScreenUpdates: true)
+            }
+            
+            let activityController = UIActivityViewController(activityItems: [image], applicationActivities: [])
+            self.present(activityController, animated: true)
+        }
     }
 
 }
