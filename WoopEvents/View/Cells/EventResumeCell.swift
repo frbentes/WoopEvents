@@ -100,7 +100,7 @@ class EventResumeCell: UITableViewCell {
     
     func showUnavailableLocation() {
         self.labelLocation.textColor = Palette.errorText()
-        self.labelLocation.text = "localização indisponível"
+        self.labelLocation.text = R.string.we.invalidLocation()
     }
     
     @IBAction func buttonCheckinTapped(_ sender: Any) {

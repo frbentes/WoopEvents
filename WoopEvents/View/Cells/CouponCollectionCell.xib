@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CouponCollectionCell" id="gTV-IL-0wX" customClass="CouponCollectionCell" customModule="WoopEvents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8o2-LH-3TA">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-ZM-Tfn">
+                                <rect key="frame" x="4" y="4" width="122" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8g-P8-Jxc">
+                                        <rect key="frame" x="10" y="15.5" width="102" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="v8g-P8-Jxc" firstAttribute="leading" secondItem="Uoe-ZM-Tfn" secondAttribute="leading" constant="10" id="Rj4-H3-TBz"/>
+                                    <constraint firstAttribute="trailing" secondItem="v8g-P8-Jxc" secondAttribute="trailing" constant="10" id="eeP-y6-ohv"/>
+                                    <constraint firstItem="v8g-P8-Jxc" firstAttribute="centerY" secondItem="Uoe-ZM-Tfn" secondAttribute="centerY" id="lm1-xP-op5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Uoe-ZM-Tfn" secondAttribute="bottom" constant="4" id="3Op-os-AMA"/>
+                            <constraint firstAttribute="trailing" secondItem="Uoe-ZM-Tfn" secondAttribute="trailing" constant="4" id="fbN-LQ-cpa"/>
+                            <constraint firstItem="Uoe-ZM-Tfn" firstAttribute="top" secondItem="8o2-LH-3TA" secondAttribute="top" constant="4" id="p38-tR-QXr"/>
+                            <constraint firstItem="Uoe-ZM-Tfn" firstAttribute="leading" secondItem="8o2-LH-3TA" secondAttribute="leading" constant="4" id="upX-H4-3Ce"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8o2-LH-3TA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="589-cl-Swk"/>
+                <constraint firstAttribute="bottom" secondItem="8o2-LH-3TA" secondAttribute="bottom" id="9CP-Wv-x8h"/>
+                <constraint firstAttribute="trailing" secondItem="8o2-LH-3TA" secondAttribute="trailing" id="XKf-Y6-QUH"/>
+                <constraint firstItem="8o2-LH-3TA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kwb-Os-o2E"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="labelCoupon" destination="v8g-P8-Jxc" id="IS6-Ju-hw3"/>
+                <outlet property="viewContainer" destination="Uoe-ZM-Tfn" id="wwI-Hb-RyC"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -18,8 +18,8 @@ struct Event: Codable {
     let imageUrl: String?
     let latitude: Double?
     let longitude: Double?
-    let coupons: [Coupon]?
-    let people: [Person]?
+    let coupons: [Coupon]
+    let people: [Person]
     
     enum CodingKeys: String, CodingKey {
         case id

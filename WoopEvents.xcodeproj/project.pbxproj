@@ -12,6 +12,12 @@
 		463CD9212445D982009B59B3 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9202445D982009B59B3 /* XCTestCase+Helpers.swift */; };
 		463CD9222445DE38009B59B3 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */; };
 		463CD9232445DE38009B59B3 /* AccessibilityLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */; };
+		463CD92B2445F412009B59B3 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9292445F412009B59B3 /* PersonCell.swift */; };
+		463CD92C2445F412009B59B3 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463CD92A2445F412009B59B3 /* PersonCell.xib */; };
+		463CD92F2445F677009B59B3 /* CouponTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD92D2445F677009B59B3 /* CouponTableCell.swift */; };
+		463CD9302445F677009B59B3 /* CouponTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463CD92E2445F677009B59B3 /* CouponTableCell.xib */; };
+		463CD9332445F6BE009B59B3 /* CouponCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CD9312445F6BE009B59B3 /* CouponCollectionCell.swift */; };
+		463CD9342445F6BE009B59B3 /* CouponCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463CD9322445F6BE009B59B3 /* CouponCollectionCell.xib */; };
 		465EBDB6243FF39A00C35D97 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDB5243FF39A00C35D97 /* R.generated.swift */; };
 		465EBDC0243FF53900C35D97 /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDBF243FF53900C35D97 /* ShadowedView.swift */; };
 		465EBDC2243FF59B00C35D97 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465EBDC1243FF59B00C35D97 /* HomeVC.swift */; };
@@ -45,6 +51,7 @@
 		4682CA2F24456A390098B930 /* BaseXibComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4682CA2E24456A390098B930 /* BaseXibComponent.swift */; };
 		4682CA3124456B430098B930 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4682CA3024456B420098B930 /* ErrorView.swift */; };
 		4682CA3324456D3A0098B930 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4682CA3224456D3A0098B930 /* ErrorView.xib */; };
+		46DE1DD924462658006CB2DC /* We.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DE1DD824462658006CB2DC /* We.strings */; };
 		5C1ADDFBD8D036D1C61AFBFC /* Pods_WoopEventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */; };
 		8BFE2AC76DEF8AD7FE298B20 /* Pods_WoopEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C56AFB8077FB14647090ED9 /* Pods_WoopEvents.framework */; };
 		D14F26A178CEB873A3946F16 /* Pods_WoopEvents_WoopEventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92DE8478E04B7EDB8D0D50 /* Pods_WoopEvents_WoopEventsUITests.framework */; };
@@ -80,6 +87,12 @@
 		463CD9192445D179009B59B3 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		463CD91B2445D1A0009B59B3 /* AccessibilityLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabels.swift; sourceTree = "<group>"; };
 		463CD9202445D982009B59B3 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
+		463CD9292445F412009B59B3 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		463CD92A2445F412009B59B3 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		463CD92D2445F677009B59B3 /* CouponTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableCell.swift; sourceTree = "<group>"; };
+		463CD92E2445F677009B59B3 /* CouponTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponTableCell.xib; sourceTree = "<group>"; };
+		463CD9312445F6BE009B59B3 /* CouponCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCollectionCell.swift; sourceTree = "<group>"; };
+		463CD9322445F6BE009B59B3 /* CouponCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponCollectionCell.xib; sourceTree = "<group>"; };
 		465EBDB5243FF39A00C35D97 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		465EBDBF243FF53900C35D97 /* ShadowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
 		465EBDC1243FF59B00C35D97 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -113,6 +126,7 @@
 		4682CA2E24456A390098B930 /* BaseXibComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibComponent.swift; sourceTree = "<group>"; };
 		4682CA3024456B420098B930 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		4682CA3224456D3A0098B930 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		46DE1DD824462658006CB2DC /* We.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = We.strings; sourceTree = "<group>"; };
 		516FC4C9E04C2CE3852B0759 /* Pods-WoopEventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.debug.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60C7F16C03C4C8FBF2B96F8E /* Pods-WoopEventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopEventsTests.release.xcconfig"; path = "Target Support Files/Pods-WoopEventsTests/Pods-WoopEventsTests.release.xcconfig"; sourceTree = "<group>"; };
 		70C0CBF8A3727C1E63127DFA /* Pods_WoopEventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopEventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +275,12 @@
 				465EBDDF244119E900C35D97 /* EventCell.xib */,
 				465EBDE82442C8BC00C35D97 /* EventResumeCell.swift */,
 				465EBDE92442C8BC00C35D97 /* EventResumeCell.xib */,
+				463CD9292445F412009B59B3 /* PersonCell.swift */,
+				463CD92A2445F412009B59B3 /* PersonCell.xib */,
+				463CD92D2445F677009B59B3 /* CouponTableCell.swift */,
+				463CD92E2445F677009B59B3 /* CouponTableCell.xib */,
+				463CD9312445F6BE009B59B3 /* CouponCollectionCell.swift */,
+				463CD9322445F6BE009B59B3 /* CouponCollectionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -335,6 +355,7 @@
 				EC0C5227243FCDE200B9374C /* Assets.xcassets */,
 				465EBDBB243FF4A700C35D97 /* Fonts */,
 				EC0C5229243FCDE200B9374C /* LaunchScreen.storyboard */,
+				46DE1DD824462658006CB2DC /* We.strings */,
 				EC0C522C243FCDE200B9374C /* Info.plist */,
 				465EBDB5243FF39A00C35D97 /* R.generated.swift */,
 			);
@@ -472,15 +493,19 @@
 			files = (
 				465EBDD2243FFB6600C35D97 /* Roboto-Medium.ttf in Resources */,
 				EC0C522B243FCDE200B9374C /* LaunchScreen.storyboard in Resources */,
+				463CD9302445F677009B59B3 /* CouponTableCell.xib in Resources */,
+				463CD92C2445F412009B59B3 /* PersonCell.xib in Resources */,
 				465EBDD3243FFB6600C35D97 /* Roboto-Bold.ttf in Resources */,
 				4682CA3324456D3A0098B930 /* ErrorView.xib in Resources */,
 				465EBDCA243FF99F00C35D97 /* Colors.xcassets in Resources */,
 				465EBDD4243FFB6600C35D97 /* Roboto-Italic.ttf in Resources */,
+				463CD9342445F6BE009B59B3 /* CouponCollectionCell.xib in Resources */,
 				EC0C5228243FCDE200B9374C /* Assets.xcassets in Resources */,
 				465EBDD6243FFB6600C35D97 /* Roboto-Regular.ttf in Resources */,
 				465EBDD5243FFB6600C35D97 /* Roboto-Light.ttf in Resources */,
 				465EBDE1244119E900C35D97 /* EventCell.xib in Resources */,
 				465EBDEB2442C8BD00C35D97 /* EventResumeCell.xib in Resources */,
+				46DE1DD924462658006CB2DC /* We.strings in Resources */,
 				EC0C5226243FCDDC00B9374C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,13 +663,16 @@
 				465EBDEA2442C8BC00C35D97 /* EventResumeCell.swift in Sources */,
 				465EBDE3244162F900C35D97 /* ReversedGeoLocation.swift in Sources */,
 				EC0C521F243FCDDC00B9374C /* AppDelegate.swift in Sources */,
+				463CD9332445F6BE009B59B3 /* CouponCollectionCell.swift in Sources */,
 				463CD91C2445D1A0009B59B3 /* AccessibilityLabels.swift in Sources */,
 				465EBDCC243FFACB00C35D97 /* TypeAlias.swift in Sources */,
 				465EBDF02443D26400C35D97 /* WeStoryboardManager.swift in Sources */,
 				4682CA2524443CC40098B930 /* Checkin.swift in Sources */,
 				465EBDE0244119E900C35D97 /* EventCell.swift in Sources */,
+				463CD92F2445F677009B59B3 /* CouponTableCell.swift in Sources */,
 				4682CA2724450BDC0098B930 /* CheckinResponse.swift in Sources */,
 				4682CA2B244539C50098B930 /* UINavigationController+Extension.swift in Sources */,
+				463CD92B2445F412009B59B3 /* PersonCell.swift in Sources */,
 				465EBDDC2440455C00C35D97 /* Person.swift in Sources */,
 				465EBDC6243FF85700C35D97 /* URLSession+Extension.swift in Sources */,
 				465EBDE72442B85100C35D97 /* EventDetailVC.swift in Sources */,

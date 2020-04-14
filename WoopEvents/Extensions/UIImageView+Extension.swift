@@ -12,10 +12,13 @@ import Nuke
 
 extension UIImageView {
     
-    func load(fromUrl urlString: String, placeholdered: Bool = false, placeholder: UIImage? = nil, hideWhenEmpty: Bool = false, targetSize: CGSize = CGSize(width: 50, height: 50), completion: ((PlatformImage) -> Void)? = nil) {
+    func load(fromUrl urlString: String, placeholdered: Bool = false, placeholder: UIImage? = nil, hideWhenEmpty: Bool = false, targetSize: CGSize = CGSize(width: 50, height: 50), circular: Bool = false, completion: ((PlatformImage) -> Void)? = nil) {
         guard let url = URL(string: urlString) else {
             if hideWhenEmpty {
                 self.isHidden = true
+            }
+            if let placeholder = placeholder {
+                completion?(placeholder)
             }
             return
         }
@@ -23,10 +26,20 @@ extension UIImageView {
             let placeholder = placeholder ?? R.image.ic_placeholder_event()
             let options = ImageLoadingOptions(placeholder: placeholder,
                                               transition: .fadeIn(duration: 0.33))
-            let request = ImageRequest(
+            
+            var request: ImageRequest!
+            if !circular {
+                request = ImageRequest(
                 url: url,
                 processors: [ImageProcessor.Resize(size: targetSize,
                                                    contentMode: .aspectFill)])
+            } else {
+                request = ImageRequest(
+                url: url,
+                processors: [ImageProcessor.Resize(size: targetSize,
+                                                   contentMode: .aspectFill),
+                             ImageProcessor.Circle()])
+            }
             
             Nuke.loadImage(with: request, options: options, into: self) { result in
                 switch result {

@@ -1,0 +1,20 @@
+/* 
+  We.strings
+  WoopEvents
+
+  Created by Fredyson Costa Marques Bentes on 14/04/20.
+  Copyright © 2020 home. All rights reserved.
+*/
+// home
+"invalid location" = "localização indisponível";
+
+// event detail
+"section people" = "Pessoas";
+"section coupons" = "Cupons";
+
+// check-in
+"invalid name" = "Nome inválido";
+"invalid email" = "E-mail inválido";
+"failed to checkin" = "Falha ao realizar check-in";
+"success title" = "Sucesso";
+"success checkin message" = "Parabéns! o check-in foi realizado com sucesso.";

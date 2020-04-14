@@ -110,13 +110,13 @@ class CheckinVC: UIViewController, WeStoryboardViewController {
         let email = textFieldEmail.text ?? ""
         
         if name.trimmingCharacters(in: .whitespaces).isEmpty {
-            self.nameController.setErrorText("Nome inválido", errorAccessibilityValue: nil)
+            self.nameController.setErrorText(R.string.we.invalidName(), errorAccessibilityValue: nil)
             self.textFieldName.becomeFirstResponder()
             return
         }
         
         if email.isEmpty || !isValidEmail(email) {
-            self.emailController.setErrorText("E-mail inválido", errorAccessibilityValue: nil)
+            self.emailController.setErrorText(R.string.we.invalidEmail(), errorAccessibilityValue: nil)
             self.textFieldEmail.becomeFirstResponder()
             return
         }
@@ -142,7 +142,7 @@ class CheckinVC: UIViewController, WeStoryboardViewController {
         if response.code == "200" {
             showSuccessDialog()
         } else {
-            showSnack("Falha ao realizar check-in")
+            showSnack(R.string.we.failedToCheckin())
         }
     }
     
@@ -152,7 +152,7 @@ class CheckinVC: UIViewController, WeStoryboardViewController {
     
     func showSuccessDialog() {
         DispatchQueue.main.async {
-            let alertController = MDCAlertController(title: "Sucesso", message: "Parabéns! o check-in foi realizado com sucesso.")
+            let alertController = MDCAlertController(title: R.string.we.successTitle(), message: R.string.we.successCheckinMessage())
             let action = MDCAlertAction(title: "OK") { (action) in
                 self.navigationController?.popBack(toControllerType: HomeVC.self)
             }

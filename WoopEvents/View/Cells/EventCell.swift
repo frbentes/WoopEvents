@@ -75,7 +75,7 @@ class EventCell: UITableViewCell {
     
     func showUnavailableLocation() {
         self.labelLocation.textColor = Palette.errorText()
-        self.labelLocation.text = "localização indisponível"
+        self.labelLocation.text = R.string.we.invalidLocation()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
