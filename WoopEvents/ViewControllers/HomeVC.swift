@@ -14,20 +14,29 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableEvents: UITableView!
     @IBOutlet weak var errorView: ErrorView!
     
+    private let refreshControl = UIRefreshControl()
     var activityIndicator: MDCActivityIndicator!
     var events: [Event] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.errorView.delegate = self
+        
+        configureRefreshControl()
         configureTableView()
         
         loadEvents()
+    }
+    
+    func configureRefreshControl() {
+        self.refreshControl.tintColor = UIColor.lightGray
+        self.refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        self.tableEvents.refreshControl = refreshControl
     }
     
     func configureTableView() {
@@ -43,21 +52,24 @@ class HomeVC: UIViewController {
         showProgress()
         WEService.shared.allEvents() { result in
             switch result {
-                case .success(let events):
-                    self.handle(events: events)
-                case .failure(let error):
-                    self.handle(error: error)
-             }
+            case .success(let events):
+                self.handle(events: events)
+            case .failure(let error):
+                self.handle(error: error)
+            }
         }
     }
     
     func handle(events: [Event]) {
         DispatchQueue.main.async {
             self.events = events
-            self.hideProgress()
             self.tableEvents.reloadData()
+            self.hideProgress()
             if events.count == 0 {
+                self.tableEvents.alpha = 0
                 self.showError(.empty)
+            } else {
+                self.tableEvents.alpha = 1
             }
         }
     }
@@ -65,6 +77,7 @@ class HomeVC: UIViewController {
     func handle(error: WEService.WEServiceError) {
         DispatchQueue.main.async {
             self.hideProgress()
+            self.tableEvents.alpha = 0
             switch error {
             case .noConnection:
                 self.showError(.connection)
@@ -72,6 +85,29 @@ class HomeVC: UIViewController {
                 self.showError(.serviceError)
             case .decodeError, .invalidEndpoint:
                 self.showError(.appInternal)
+            }
+        }
+    }
+    
+    @objc
+    private func refreshData() {
+        reloadEvents()
+    }
+    
+    func reloadEvents() {
+        WEService.shared.allEvents() { result in
+            switch result {
+            case .success(let events):
+                self.handle(events: events)
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.events.removeAll()
+                    self.tableEvents.reloadData()
+                }
+                self.handle(error: error)
+            }
+            DispatchQueue.main.async {
+                self.refreshControl.endRefreshing()
             }
         }
     }
